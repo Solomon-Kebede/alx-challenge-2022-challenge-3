@@ -18,12 +18,22 @@ from django.contrib import admin
 from django.urls import path, include
 
 from django.shortcuts import render
+from django.shortcuts import redirect
+
 def custom_404_view_2(request, url):
     return render(request, '404/404.html', status=404)
 
+def projects_view(request):
+    return render(request, 'projects/100018.html')
+
+def index(request):
+    return redirect('projects/100018')
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index, name='home_page'),
     path('ch4ll3n632022/', include('levels.urls')),
+    path('projects/100018', projects_view, name='projects'),
     # The following are to mock the error pages
     path('<str:url>', custom_404_view_2, name='match_url'),
     path('<str:url>/', custom_404_view_2, name='match_url'),
