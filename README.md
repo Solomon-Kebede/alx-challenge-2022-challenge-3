@@ -23,3 +23,5 @@ python manage.py runserver
 ```
 
 Then, go to `http://127.0.0.1:8000/` and Enjoy :)
+
+If you are interested in solving clue 3, here below is a [post](https://solomon-kebede.github.io/alx-challenge-2022/the-clues/) on the subject
