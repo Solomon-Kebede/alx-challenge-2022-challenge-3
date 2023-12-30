@@ -1,0 +1,19 @@
+{% extends 'levels/base.html' %}
+{% load static %}
+{% block title_level_number %}5{% endblock %}
+
+{% block panel_title %}
+        Be or not to binary
+{% endblock %}
+
+{% block panel_content %}
+        <img src="{% static '/images/challenge2022/matrix.jpg' %}" style="
+          border: 1px solid;
+          border-radius: 7px;">
+          <div style="
+          margin: 10px;
+          margin-left: 10%;
+          ">
+            <code>01101000 00110000 01101100 01100010 00110011 01110010 01110100 00110000 01101110</code>
+          </div>
+{% endblock %}

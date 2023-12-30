@@ -1,0 +1,32 @@
+{% extends 'levels/base.html' %}
+{% load static %}
+{% block title_level_number %}6{% endblock %}
+
+{% block panel_title %}
+        Ave ??? decipher!
+{% endblock %}
+
+{% block panel_content %}
+      <div style="display: flex;">
+          <div>
+            <img src="{% static '/images/challenge2022/caesar.jpg' %}" style="
+            border-radius: 5px;
+            width: 80%;
+            ">
+            <div style="
+            margin-left: 30%;
+            margin-top: 2%;
+    "><code>fdhvdu</code></div>
+        </div>
+          <div>
+            <img src="{% static '/images/challenge2022/betty.jpg' %}" style="
+            border-radius: 5px;
+            width: 80%;
+            ">
+            <div style="
+            margin-left: 30%;
+            margin-top: 2%;
+    "><code>???</code></div>
+        </div>
+      </div>
+{% endblock %}

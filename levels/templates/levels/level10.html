@@ -1,0 +1,45 @@
+{% extends 'levels/base.html' %}
+{% load static %}
+{% block title_level_number %}10{% endblock %}
+
+{% block panel_title %}
+        Are you teamEmacs or teamVim?
+{% endblock %}
+
+{% block panel_content %}
+      <div style="display: flex;">
+        <div>
+          <img src="{% static '/images/challenge2022/teams.jpg' %}" style="
+            border: 1px solid;
+              border-radius: 7px;">
+          <div style="
+            display: flex;
+            margin: 10px;
+            margin-left: 30%;
+          ">
+            <div style="
+              padding: 10px;background-color: #db3e3e;
+              border-radius: 5px;
+              margin: 5px;
+            ">
+              <a href="level0" style="
+                margin: 5px;
+                font-weight: bold;
+                color: #fff;
+              ">Team Vim</a></div>
+              <span style="padding: 14px 4px;">or</span>
+            <div style="
+              padding: 10px;
+              background-color: #db3e3e;
+              border-radius: 5px;
+              margin: 5px;
+            ">
+              <a href="teams?t=emacs" style="
+                margin: 5px;
+                font-weight: bold;
+                color: #fff;
+              ">Team Emacs</a></div>
+          </div>
+        </div>
+      </div>
+{% endblock %}

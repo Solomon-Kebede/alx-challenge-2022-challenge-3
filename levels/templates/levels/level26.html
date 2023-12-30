@@ -1,0 +1,24 @@
+{% extends 'levels/base.html' %}
+{% load static %}
+{% block title_level_number %}26{% endblock %}
+
+{% block panel_title %}
+        Almost done, this is the last level! Are you clueless?
+{% endblock %}
+
+{% block panel_content %}
+          <p>
+            Next level format: <code>clue1_clue2_clue3_clue4_clue_5</code>
+          </p>
+          <img src="{% static '/images/challenge2022/clue-4-is-water.jpg' %}" style="border-radius: 7px;">
+          <div class="sm-gap" style="border: 1px dashed #4A99E9;border-radius:20px;padding:10px;margin:0px 20px 30px;background-color:#f4f4f4;">
+            <h4 style="color:#4A99E9"><i aria-hidden="true" class="fa fa-twitter "></i> Share your status on Twitter</h4>
+            <blockquote style="border-left: 5px solid #4A99E9;margin-top:10px">
+              I have successfully solved @alx_africa #ALXchallenge2022 Level25 and I am now working on Level26. Thanks @guillaumesalva and @karoub, this is fun!
+            </blockquote>
+            <div style="text-align:right">
+              <a href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-text="I have successfully solved @alx_africa #ALXchallenge2022 Level25 and I am now working on Level26. Thanks @guillaumesalva and @karoub, this is fun!" data-show-count="false">Tweet</a>
+            </div>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+{% endblock %}

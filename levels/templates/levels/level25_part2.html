@@ -1,0 +1,12 @@
+{% extends 'levels/base.html' %}
+{% load static %}
+{% block title_level_number %}25{% endblock %}
+
+{% block panel_title %}
+        Ready to Take Off
+{% endblock %}
+
+{% block panel_content %}
+            <script>alert("You are not coming from nasa.com")</script>
+            <img src="{% static '/images/challenge2022/nasa.jpg' %}" style="border-radius: 7px;">
+{% endblock %}

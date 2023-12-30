@@ -1,0 +1,22 @@
+{% extends 'levels/base.html' %}
+{% load static %}
+{% block title_level_number %}13{% endblock %}
+
+{% block panel_title %}
+        Not That Crazy Bases
+{% endblock %}
+
+{% block panel_content %}
+            <p>
+                Convention reminder:
+                <ul>
+                    <li>Ox...: Hexadecimal</li>
+                    <li>Oo...: Octal</li>
+                    <li>Ob...: Binary</li>
+                </ul>
+                <code>0xf9b325d + 0o717 + 0b10001111010110101 - 0x8fce71a</code> in decimal
+            </p>
+            <img src="{% static '/images/challenge2022/not-that-crazy-bases.jpg' %}" style="
+            border: 1px;
+          border-radius: 7px;">
+{% endblock %}

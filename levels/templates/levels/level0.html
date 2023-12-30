@@ -1,0 +1,58 @@
+{% extends 'levels/base.html' %}
+{% load static %}
+{% block title_level_number %}0{% endblock %}
+
+{% block panel_title %}
+        Ch4ll3n63 #3 h45 574r73d 600d luck!
+{% endblock %}
+
+{% block panel_content %}
+        <p>This series of challenges is brought to you by these guys. Let us know what you think about it on twitter! Good luck!</p>
+
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+            <div style="text-align: center;">
+                <img src="{% static '/images/challenge2022/karoub.jpg' %}" style="border: 1px solid #777;border-radius: 7px;">
+                <a href="https://twitter.com/karoub">karoub</a>
+            </div>
+
+            <div style="text-align: center;">
+                <img src="{% static '/images/challenge2022/guillaumesalva.jpg' %}" style="border: 1px solid #777;border-radius: 7px;">
+                <a href="https://twitter.com/guillaumesalva">guillaumesalva</a>
+            </div>
+
+            <div style="text-align: center;">
+                <img src="{% static '/images/challenge2022/gautie_a.jpg' %}" style="border: 1px solid #777;border-radius: 7px;">
+                <a href="https://twitter.com/gautie_a">gautie_a</a>
+            </div>
+
+            <div style="text-align: center;">
+                <img src="{% static '/images/challenge2022/julienbarbier42.jpg' %}" style="border: 1px solid #777;border-radius: 7px;">
+                <a href="https://twitter.com/julienbarbier42">julienbarbier42</a>
+            </div>
+        </div>
+        <br>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr);gap: 10px;">
+            <div></div>
+            <div style="text-align: center;">
+                <img src="{% static '/images/challenge2022/0xAuntyBetty.jpg' %}"  style="border: 1px solid #777;border-radius: 7px;">
+                <a href="https://twitter.com/0xAuntyBetty">0xAuntyBetty</a>
+            </div>
+        </div>
+
+        <p>
+            <strong>Rules and tips:</strong>
+            <ul>
+                <li>All cohorts are welcome to participate</li>
+                <li>The goal of this game is to get as far as possible</li>
+                <li>Solve each level to find the URL to the next level</li>
+                <li>The winner will be randomly chosen from the pool of eligible students who finished the game</li>
+                <li>If nobody has finished the game by the deadline, we will choose randomly a student from the pool of eligible students who are at the furthest level</li>
+                <li>You might want to follow the creators of this game on Twitter and Youtube to get some clues</li>
+                <li>The game will end December 13th 23:42 PST</li>
+                <li>The winner will be announced by December 16th</li>
+                <li>Good luck!</li>
+            </ul>
+        </p>
+
+
+{% endblock %}

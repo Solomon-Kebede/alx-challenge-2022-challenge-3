@@ -1,0 +1,19 @@
+{% extends 'levels/base.html' %}
+{% load static %}
+{% block title_level_number %}8{% endblock %}
+
+{% block panel_title %}
+        When did your Aunty Betty join Twitter?
+{% endblock %}
+
+{% block panel_content %}
+          <div>
+            <img src="{% static '/images/challenge2022/betty-twitter.jpg' %}" style="
+          border: 1px solid #BBB;
+          border-radius: 7px;">
+            <div style="
+            margin-left: 40%;
+            margin-top: 2%;">
+              <code>&lt;month&gt;_&lt;year&gt;</code>
+            </div>
+{% endblock %}
