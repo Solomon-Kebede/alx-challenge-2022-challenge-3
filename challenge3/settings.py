@@ -124,6 +124,15 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    BASE_DIR / "static/assets",
+    BASE_DIR / "static/assets/font-awesome",
+    BASE_DIR / "static/assets/bootstrap-slider/dist/css/",
+    BASE_DIR / "static/packs/css",
+    BASE_DIR / "static/images/challenge2022",
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
