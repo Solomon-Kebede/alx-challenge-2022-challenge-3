@@ -17,7 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from django.shortcuts import render
+def custom_404_view_2(request, url):
+    return render(request, '404/404.html', status=404)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ch4ll3n632022/', include('levels.urls')),
+    # The following are to mock the error pages
+    path('<str:url>', custom_404_view_2, name='match_url'),
+    path('<str:url>/', custom_404_view_2, name='match_url'),
 ]
